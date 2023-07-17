@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../src/common/config.h
+atomic
+-
+chrono
+-
+cstdint
+-
+
+../src/replacer/replacer.h
+common/config.h
+../src/replacer/common/config.h
+
+/root/db2023-ge/rmdb/src/replacer/lru_replacer.cpp
+lru_replacer.h
+/root/db2023-ge/rmdb/src/replacer/lru_replacer.h
+
+/root/db2023-ge/rmdb/src/replacer/lru_replacer.h
+list
+-
+mutex
+-
+vector
+-
+common/config.h
+/root/db2023-ge/rmdb/src/replacer/common/config.h
+replacer/replacer.h
+/root/db2023-ge/rmdb/src/replacer/replacer/replacer.h
+unordered_map
+/root/db2023-ge/rmdb/src/replacer/unordered_map
+
